@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -94,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,7 +110,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "HRController.cs",
+              "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\HRController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HRController.cs",
+              "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\HRController.cs",
+              "RelativeToolTip": "Controllers\\HRController.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAIwJkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T11:47:26.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InvoiceViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\InvoiceViewModel.cs",
               "RelativeDocumentMoniker": "Models\\InvoiceViewModel.cs",
@@ -114,12 +131,11 @@
               "RelativeToolTip": "Models\\InvoiceViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:38:47.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T11:38:47.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LecturerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\LecturerViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LecturerViewModel.cs",
@@ -127,12 +143,11 @@
               "RelativeToolTip": "Models\\LecturerViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:36:37.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T11:36:37.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -144,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "2598560.png -  [English (United Kingdom)] - PNG [2000x2000, 32 bit, PNG]",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\wwwroot\\images\\2598560.png",
               "RelativeDocumentMoniker": "wwwroot\\images\\2598560.png",
@@ -156,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CMS_WebAppsContext.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
@@ -168,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
@@ -180,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -192,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -204,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -216,7 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Submission\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Submission\\Index.cshtml",
@@ -228,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "SubmissionController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\SubmissionController.cs",
               "RelativeDocumentMoniker": "Controllers\\SubmissionController.cs",
@@ -240,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Claims\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Claims\\Create.cshtml",
@@ -252,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Claims\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Claims\\Index.cshtml",
@@ -264,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ClaimsController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\ClaimsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClaimsController.cs",
@@ -276,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ClaimsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\ClaimsViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ClaimsViewModel.cs",
@@ -284,12 +299,11 @@
               "RelativeToolTip": "Models\\ClaimsViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "RegisterView.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Account\\RegisterView.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\RegisterView.cshtml",
@@ -301,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "LoginView.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Account\\LoginView.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\LoginView.cshtml",
@@ -313,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -326,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
@@ -334,12 +348,11 @@
               "RelativeToolTip": "Models\\RegisterViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
@@ -347,12 +360,11 @@
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.545Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
