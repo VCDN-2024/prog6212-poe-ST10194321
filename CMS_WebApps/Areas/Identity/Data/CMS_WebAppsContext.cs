@@ -14,7 +14,8 @@ namespace CMS_WebApps.Data
 
         // Add DbSet for your custom models
         public DbSet<ClaimViewModel> Claims { get; set; }
-       
+        public DbSet<LecturerViewModel> Lecturers { get; set; }
+        public DbSet<InvoiceViewModel> Invoices { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -38,7 +39,11 @@ namespace CMS_WebApps.Data
                 entity.Property(e => e.Status).HasDefaultValue("Pending");
             });
 
-           
+            builder.Entity<InvoiceViewModel>(entity =>
+            {
+                entity.Property(e => e.TotalAmount).HasColumnType("decimal(18, 2)");
+                entity.Property(e => e.InvoiceNumber).IsRequired();
+            });
         }
     }
 }
