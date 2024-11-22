@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Sign Up";
-}
+﻿@model CMS_WebApps.Models.RegisterViewModel
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,9 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
-    <!--> Design elements for the Register page -->
     <style>
-        /*https://www.w3schools.com/w3css/w3css_templates.asp */
         body {
             font-family: 'SF Pro', sans-serif;
             background-image: url('/images/wave.svg');
@@ -36,15 +32,13 @@
             height: 100vh;
         }
 
-
         .signup-title {
             font-family: 'Bakbak One', sans-serif;
             font-size: 24px;
             margin-bottom: 20px;
         }
 
-        input[type="email"],
-        input[type="password"] {
+        input[type="email"], input[type="password"], input[type="text"], input[type="tel"], select {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -68,52 +62,40 @@
             .btn:hover {
                 background-color: #086AD9;
             }
-
-        .divider {
-            margin: 10px 0;
-        }
-
-        .alternative {
-            margin-top: 10px;
-        }
-
-        .link {
-            color: #086AD9;
-            text-decoration: none;
-        }
     </style>
 </head>
 <body>
     <div class="center-form">
         <div class="signup-container">
             <div class="signup-title">Sign Up Now</div>
-            <!-->Form for the Register page -->
             <form method="post" asp-action="RegisterView" asp-controller="Account">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" placeholder="Your email" required />
 
-                <input type="email" name="Email" placeholder="Your email" required />
-                <input type="password" name="Password" placeholder="Your password" required />
+                <label for="Password">Password:</label>
+                <input type="password" id="Password" name="Password" placeholder="Your password" required />
 
-                <label for="role">Select Role:</label>
-                <select name="Role" required>
+                <label for="Role">Select Role:</label>
+                <select id="Role" name="Role" required>
                     <option value="" disabled selected>Select your role</option>
                     <option value="Lecturer">Lecturer</option>
                     <option value="ProgramCoordinator">Program Coordinator</option>
                     <option value="AcademicManager">Academic Manager</option>
-                    <option value="HumanResources">Human Resources</option>
+                    <option value="HR">Human Resources</option>
                 </select>
 
-                <label>
-                    <input type="checkbox" required /> I agree to the Terms of Service.
-                </label>
+                <label for="FullName">Full Name:</label>
+                <input type="text" id="FullName" name="FullName" placeholder="Your full name" required />
+
+                <label for="PhoneNumber">Phone Number:</label>
+                <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="Your phone number" required />
+
                 <button type="submit" class="btn">Sign Up</button>
             </form>
-            <div class="divider">or</div>
 
-            <button class="btn" onclick="location.href='@Url.Action("Login", "Account")'">Login</button>
-        </div>
-    </div>
 </body>
 </html>
+
 <!--//Title: Pro C 7 with.NET and .NET Core
 //Author: Andrew Troelsen; Philip Japikse
 // Date: 2017

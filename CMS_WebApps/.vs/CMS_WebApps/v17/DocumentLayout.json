@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\submission\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\submission\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\submissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\submissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\claims\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,52 +15,72 @@
       "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\claims\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\hr\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\hr\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\lecturerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\lecturerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\claimsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\claimsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\account\\registerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\account\\registerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\account\\loginview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\account\\loginview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\submissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\submissioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\claimsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\claimsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\invoiceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\lecturerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\lecturerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\hr\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\hr\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\submission\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\submission\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -102,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,44 +114,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\HR\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\HR\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\HR\\Index.cshtml",
               "RelativeToolTip": "Views\\HR\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKEAAAAHAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAAKcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T11:51:50.91Z"
+              "WhenOpened": "2024-11-22T11:51:50.91Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "HRController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\HRController.cs",
               "RelativeDocumentMoniker": "Controllers\\HRController.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\HRController.cs",
               "RelativeToolTip": "Controllers\\HRController.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAgwJkAAAABAAAA",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAgwJ4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T11:47:26.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "InvoiceViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\InvoiceViewModel.cs",
               "RelativeDocumentMoniker": "Models\\InvoiceViewModel.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\InvoiceViewModel.cs",
               "RelativeToolTip": "Models\\InvoiceViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:38:47.229Z"
+              "WhenOpened": "2024-11-22T11:38:47.229Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LecturerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\LecturerViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LecturerViewModel.cs",
@@ -159,11 +161,12 @@
               "RelativeToolTip": "Models\\LecturerViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:36:37.774Z"
+              "WhenOpened": "2024-11-22T11:36:37.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -171,8 +174,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAQwB8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:25:46.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T11:25:46.995Z"
             },
             {
               "$type": "Document",
@@ -188,15 +190,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "CMS_WebAppsContext.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
               "RelativeToolTip": "Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T12:34:58.892Z"
+              "WhenOpened": "2024-11-20T12:34:58.892Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -224,19 +227,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAIwHkAAAAAAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAYwIUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:40.771Z"
+              "WhenOpened": "2024-11-19T16:40:40.771Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -248,120 +252,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Submission\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Submission\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Submission\\Index.cshtml",
               "RelativeToolTip": "Views\\Submission\\Index.cshtml",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAgwKoAAAAHAAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAgwLAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-19T16:40:41.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "SubmissionController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\SubmissionController.cs",
               "RelativeDocumentMoniker": "Controllers\\SubmissionController.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\SubmissionController.cs",
               "RelativeToolTip": "Controllers\\SubmissionController.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwEEAAAABAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwEYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T16:40:41.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Claims\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Claims\\Create.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Claims\\Create.cshtml",
               "RelativeToolTip": "Views\\Claims\\Create.cshtml",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAYwHUAAAAAAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAAwHUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.536Z"
+              "WhenOpened": "2024-11-19T16:40:41.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Claims\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Claims\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Claims\\Index.cshtml",
               "RelativeToolTip": "Views\\Claims\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAYwL4AAAAAAAAA",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAQwL4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-19T16:40:41.537Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ClaimsController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\ClaimsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClaimsController.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\ClaimsController.cs",
               "RelativeToolTip": "Controllers\\ClaimsController.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAgwGQAAABlAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAgwGQAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T16:40:41.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "ClaimsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\ClaimsViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ClaimsViewModel.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\ClaimsViewModel.cs",
               "RelativeToolTip": "Models\\ClaimsViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAgAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwCoAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.539Z"
+              "WhenOpened": "2024-11-19T16:40:41.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 3,
               "Title": "RegisterView.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Account\\RegisterView.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\RegisterView.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Account\\RegisterView.cshtml",
               "RelativeToolTip": "Views\\Account\\RegisterView.cshtml",
-              "ViewState": "AQIAAFwAAAAAAAAAAADwv3kAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAGcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.54Z"
+              "WhenOpened": "2024-11-19T16:40:41.54Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 4,
               "Title": "LoginView.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Account\\LoginView.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\LoginView.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Account\\LoginView.cshtml",
               "RelativeToolTip": "Views\\Account\\LoginView.cshtml",
-              "ViewState": "AQIAAE8AAAAAAAAAAADwv2wAAAAAAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAwG0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.542Z"
+              "WhenOpened": "2024-11-19T16:40:41.542Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHYAAABgAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAIwHsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T16:40:41.543Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
@@ -369,11 +377,12 @@
               "RelativeToolTip": "Models\\RegisterViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.544Z"
+              "WhenOpened": "2024-11-19T16:40:41.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
@@ -381,19 +390,21 @@
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.545Z"
+              "WhenOpened": "2024-11-19T16:40:41.545Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEoAAAAlAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.546Z"
+              "WhenOpened": "2024-11-19T16:40:41.546Z",
+              "EditorCaption": ""
             }
           ]
         }

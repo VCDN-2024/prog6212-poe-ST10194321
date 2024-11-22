@@ -117,3 +117,8 @@ namespace CMS_WebApps.Controllers
 //Code from: https://stackoverflow.com/questions/60520664/how-to-create-a-simple-login-in-asp-net-core-without-database-and-authorize-cont
 //https://stackoverflow.com/questions/1304603/asp-net-mvc-roles-without-database-and-without-role-provider
 //https://learn.microsoft.com/en-us/aspnet/core/security/authorization/roles?view=aspnetcore-8.0
+//Title: Pro C 7 with.NET and .NET Core
+//Author: Andrew Troelsen; Philip Japikse
+// Date: 2017
+// Code version: Version 1
+//Availability: Textbook / Ebook
