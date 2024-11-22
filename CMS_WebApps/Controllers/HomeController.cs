@@ -1,64 +1,32 @@
-using Microsoft.AspNetCore.Mvc;
 using CMS_WebApps.Models;
-using System.Linq;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Http;
-using CMS_WebApps.Controllers;
-
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace CMS_WebApps.Controllers
 {
-    public class SubmissionController : Controller
+    public class HomeController : Controller
     {
-        // Referencesthe ClaimController's claims list
-        private static List<ClaimViewModel> claims => ClaimsController.claims;
+        private readonly ILogger<HomeController> _logger;
 
-        // Displays the list of claims on the submissions page (only for Program Coordinators and Academic Managers)
-        public IActionResult Index()
+        public HomeController(ILogger<HomeController> logger)
         {
-            // Gets the user role from the session 
-            string userRole = HttpContext.Session.GetString("Role");
-
-            // Checks if the user is a Program Coordinator or Academic Manager
-            if (userRole == "ProgramCoordinator" || userRole == "AcademicManager")
-            {
-
-                return View(claims);
-            }
-            else
-            {
-
-                return Unauthorized();
-            }
+            _logger = logger;
         }
 
-
-        [HttpPost]
-        public IActionResult UpdateClaimStatus(int id, string status)
+        public IActionResult Index()
         {
-            // Find the claim by its unique ID
-            var claim = claims.FirstOrDefault(c => c.ID == id);
-            if (claim != null)
-            {
-                // Updates the status of the claim (Approved or Rejected)
-                claim.Status = status;
-                Console.WriteLine($"Claim with ID {id} has been updated to status: {status}");
-            }
-            else
-            {
-                // If there is no matching claim it returns an error message
-                Console.WriteLine($"No claim found with ID {id}");
-            }
+            return View();
+        }
 
-            // After updating the claim status it refreshes the submissions page to view status
-            return RedirectToAction("Index");
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
-//Title: Pro C 7 with.NET and .NET Core
-//Author: Andrew Troelsen; Philip Japikse
-// Date: 2017
-// Code version: Version 1
-//Availability: Textbook / Ebook
-
-//Code from: https://stackoverflow.com/questions/54100268/mvc-approve-or-unapprove-button-clarification

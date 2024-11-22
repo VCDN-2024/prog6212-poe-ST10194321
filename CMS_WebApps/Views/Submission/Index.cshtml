@@ -1,24 +1,23 @@
 ﻿@model List<CMS_WebApps.Models.ClaimViewModel>
 
+@{
+    var statuses = ViewBag.Statuses as List<string>;
+    var selectedStatus = ViewBag.SelectedStatus as string ?? "All";
+    var searchTerm = ViewBag.SearchTerm as string ?? "";
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
-    <!--> Design elements for the Review Claims page -->
     <style>
-        /*https://www.w3schools.com/w3css/w3css_templates.asp */
         body {
+            font-family: 'SF Pro', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-        }
-
-        h1 {
-            color: #043873;
-            margin-bottom: 20px;
-            font-family: 'Bakbak One', sans-serif;
         }
 
         .container {
@@ -26,6 +25,15 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            color: #043873;
+            margin-bottom: 20px;
+            font-family: 'Bakbak One', sans-serif;
+            text-align: center;
         }
 
         .filter-container {
@@ -35,22 +43,35 @@
             margin-bottom: 20px;
         }
 
-        select, input[type="search"] {
+        select, input[type="search"], button {
             padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
             margin-right: 10px;
+            border-radius: 5px;
         }
 
-        button#filter-btn {
+        button {
             background-color: #086AD9;
             color: white;
             border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
             cursor: pointer;
-            font-size: 14px;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         table {
@@ -70,69 +91,32 @@
             background-color: #043873;
             color: white;
         }
-
-        .status {
-            font-weight: bold;
-        }
-
-        .status-pending {
-            color: #FFA500; /* Orange for pending */
-        }
-
-        .status-approved {
-            color: #28A745; /* Green for approved */
-        }
-
-        .status-rejected {
-            color: #DC3545; /* Red for rejected */
-        }
-
-        .btn {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            color: white;
-        }
-
-        .btn-success {
-            background-color: #28a745;
-        }
-
-        .btn-danger {
-            background-color: #dc3545;
-        }
-
-        .btn-download {
-            background-color: #086AD9;
-            color: white;
-            text-align: center;
-            display: inline-block;
-            padding: 8px;
-            border-radius: 5px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Claims</h1>
 
-        <div class="filter-container">
-            <div>
-                <label for="status">Status</label>
-                <select id="status">
-                    <option value="All">All</option>
-                    <option value="Pending">Pending</option>
-                    <option value="Approved">Approved</option>
-                    <option value="Rejected">Rejected</option>
-                </select>
+        <!-- Filter Form -->
+        <form method="get" action="@Url.Action("Index", "Submission")">
+            <div class="filter-container">
+                <div>
+                    <label for="status">Filter by Status:</label>
+                    <select id="status" name="statusFilter">
+                        @foreach (var status in statuses)
+                        {
+                            <option value="@status" selected="@(status == selectedStatus ? "selected" : null)">@status</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <input type="search" id="search" name="searchTerm" placeholder="Search by ID, Name, or Modules" value="@searchTerm" />
+                    <button type="submit">Filter</button>
+                </div>
             </div>
-            <div>
-                <input type="search" id="search" placeholder="Search by ID, Name..." />
-                <button id="filter-btn">Filter</button>
-            </div>
-        </div>
+        </form>
 
+        <!-- Claims Table -->
         <table>
             <thead>
                 <tr>
@@ -151,35 +135,32 @@
                 @foreach (var claim in Model)
                 {
                     <tr>
-                        <td class="status @(claim.Status == "Pending" ? "status-pending" : claim.Status == "Approved" ? "status-approved" : "status-rejected")">
-                            @claim.Status
-                        </td>
+                        <td>@claim.Status</td>
                         <td>@claim.Date1?.ToString("yyyy-MM-dd")</td>
                         <td>@claim.ID</td>
                         <td>@claim.LastName</td>
                         <td>@claim.Hours</td>
                         <td>@claim.Modules</td>
-                        <td>@claim.Total</td>
+                        <td>@claim.Total.ToString("C")</td>
                         <td>
                             @if (!string.IsNullOrEmpty(claim.Document))
                             {
-                                <a href="@claim.Document" target="_blank" class="btn-download">📄@System.IO.Path.GetFileName(claim.Document)</a>
+                                <a href="@claim.Document" target="_blank">View Document</a>
                             }
                             else
                             {
                                 <span>No document uploaded</span>
                             }
                         </td>
-
                         <td>
-                            <form asp-action="UpdateClaimStatus" method="post">
-                                <input type="hidden" name="id" value="@claim.ID" />
-                                @if (claim.Status == "Pending")
-                                {
-                                    <button type="submit" name="status" value="Approved" class="btn btn-success">Approve</button>
-                                    <button type="submit" name="status" value="Rejected" class="btn btn-danger">Reject</button>
-                                }
-                            </form>
+                            @if (claim.Status == "Pending")
+                            {
+                                <form method="post" asp-action="UpdateClaimStatus" asp-controller="Submission">
+                                    <input type="hidden" name="id" value="@claim.ID" />
+                                    <button type="submit" name="status" value="Approved" class="btn-success">Approve</button>
+                                    <button type="submit" name="status" value="Rejected" class="btn-danger">Reject</button>
+                                </form>
+                            }
                         </td>
                     </tr>
                 }
@@ -188,8 +169,3 @@
     </div>
 </body>
 </html>
-<!--//Title: Pro C 7 with.NET and .NET Core
-//Author: Andrew Troelsen; Philip Japikse
-// Date: 2017
-// Code version: Version 1
-//Availability: Textbook / Ebook-->
