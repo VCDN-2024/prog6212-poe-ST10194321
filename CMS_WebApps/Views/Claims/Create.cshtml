@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=SF+Pro:wght@400;500&display=swap" rel="stylesheet">
-    <!--> Design elements for the Submit claim page -->
+    <!-- Design elements for the Submit claim page -->
     <style>
         /*https://www.w3schools.com/w3css/w3css_templates.asp */
         body {
@@ -81,14 +81,24 @@
 
                 <!-- Input field for the Module -->
                 <div class="form-group">
-                    <label for="module">Module:</label>
-                    <input type="text" class="form-control" id="module" name="Module" required />
+                    <label for="Modules">Module:</label>
+                    <input type="text" class="form-control" id="Modules" name="Modules" required />
+                </div>
+
+                <!-- Input field for the claim submission date -->
+                <div class="form-group">
+                    <label for="Date1">Date:</label>
+                    <input type="date" class="form-control" id="Date1" name="Date1" required />
                 </div>
 
                 <!-- Input field for the supporting document -->
                 <div class="form-group">
-                    <label for="document">Supporting Document (Optional):</label>
+                    <label for="document">
+                        Supporting Document (Optional):
+                        <small>(Max: 5 MB, Allowed: PDF, DOCX, TXT)</small>
+                    </label>
                     <input type="file" class="form-control-file" id="document" name="Document" />
+                    <span asp-validation-for="Document" class="text-danger"></span>
                 </div>
 
                 <div class="form-actions">
@@ -99,6 +109,7 @@
     </div>
 </body>
 </html>
+
 <!--//Title: Pro C 7 with.NET and .NET Core
 //Author: Andrew Troelsen; Philip Japikse
 // Date: 2017

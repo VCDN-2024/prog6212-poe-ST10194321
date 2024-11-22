@@ -26,56 +26,70 @@ namespace CMS_WebApps.Controllers
             return View();
         }
 
-        // POST: Create a new claim and handle file upload
         [HttpPost]
         public IActionResult Create(ClaimViewModel model, IFormFile document)
         {
-            // Sets predefined  hourly rate and calculates the total salary
-            const decimal hourlyRate = 300.00m;
-            model.Total = model.Hours * hourlyRate;
-            model.Date1 = DateTime.Now;
-
-            model.Status = "Pending";
-
-            // Assigns a unique ID to the claim
-            model.ID = claims.Any() ? claims.Max(c => c.ID) + 1 : 1;
-
-            // Handles the supporting document upload
-            if (document != null && document.Length > 0)
+            if (ModelState.IsValid)
             {
-                try
-                {
-                    // Saves the files to upload folder
-                    string uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                const decimal hourlyRate = 400.00m;
+                const long fileSizeLimit = 5 * 1024 * 1024; // 5 MB limit
+                var allowedExtensions = new[] { ".pdf", ".docx", ".txt" };
 
-                    if (!Directory.Exists(uploadsPath))
+                model.Total = model.Hours * hourlyRate;
+                model.Date1 = DateTime.Now;
+                model.Status = "Pending";
+
+                model.ID = claims.Any() ? claims.Max(c => c.ID) + 1 : 1;
+
+                if (document != null && document.Length > 0)
+                {
+                    // Validate file size
+                    if (document.Length > fileSizeLimit)
                     {
-                        Directory.CreateDirectory(uploadsPath);
+                        ModelState.AddModelError("Document", "File size exceeds the maximum limit of 5 MB.");
+                        return View(model);
                     }
 
-                    var filePath = Path.Combine(uploadsPath, document.FileName);
-                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    // Validate file type
+                    var fileExtension = Path.GetExtension(document.FileName).ToLower();
+                    if (!allowedExtensions.Contains(fileExtension))
                     {
-                        document.CopyTo(stream);
+                        ModelState.AddModelError("Document", "Invalid file type. Only PDF, DOCX, and TXT files are allowed.");
+                        return View(model);
                     }
 
-                    // Stores the path of the documnet as a relative URL
-                    model.Document = "/uploads/" + document.FileName;
+                    try
+                    {
+                        string uploadsPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+                        if (!Directory.Exists(uploadsPath)) Directory.CreateDirectory(uploadsPath);
+
+                        string filePath = Path.Combine(uploadsPath, document.FileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            document.CopyTo(stream);
+                        }
+
+                        model.Document = "/uploads/" + document.FileName;
+                    }
+                    catch (Exception ex)
+                    {
+                        ModelState.AddModelError("", $"Error uploading document: {ex.Message}");
+                        return View(model);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error uploading document: {ex.Message}");
-                }
+
+                claims.Add(model);
+                Console.WriteLine($"Claim submitted with Module: {model.Modules}");
+                return RedirectToAction("Index");
             }
 
-            // Adds the claim to the list
-            claims.Add(model);
-
-            // Redirects the user to the Review claims view after the claim is created
-            return RedirectToAction("Index", "Claims");
+            return View(model);
         }
+
+
     }
 }
+
 
 //Title: Pro C 7 with.NET and .NET Core
 //Author: Andrew Troelsen; Philip Japikse
