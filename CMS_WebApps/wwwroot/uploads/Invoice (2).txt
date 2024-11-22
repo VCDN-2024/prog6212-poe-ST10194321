@@ -1,0 +1,7 @@
+Invoice Summary
+---------------------------
+Lecturer: Jose Gonzalves
+Claim ID: 1
+Modules: CLDV6212
+Total: R6 900,00
+---------------------------

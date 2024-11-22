@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <!--> Design elements for the Register page -->
+    <style>
+        /*https://www.w3schools.com/w3css/w3css_templates.asp */
+        body {
+            font-family: 'SF Pro', sans-serif;
+            background-image: url('/images/wave.svg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: #043873;
+        }
+
+        .signup-container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        .center-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        .signup-title {
+            font-family: 'Bakbak One', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background-color: #043873;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin: 10px 0;
+            font-family: 'Bakbak One', sans-serif;
+            font-size: 16px;
+        }
+
+            .btn:hover {
+                background-color: #086AD9;
+            }
+
+        .divider {
+            margin: 10px 0;
+        }
+
+        .alternative {
+            margin-top: 10px;
+        }
+
+        .link {
+            color: #086AD9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-form">
+        <div class="signup-container">
+            <div class="signup-title">Sign Up Now</div>
+            <!-->Form for the Register page -->
+            <form method="post" asp-action="RegisterView" asp-controller="Account">
+
+                <input type="email" name="Email" placeholder="Your email" required />
+                <input type="password" name="Password" placeholder="Your password" required />
+
+                <label for="role">Select Role:</label>
+                <select name="Role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="Lecturer">Lecturer</option>
+                    <option value="ProgramCoordinator">Program Coordinator</option>
+                    <option value="AcademicManager">Academic Manager</option>
+                    <option value="HumanResources">Human Resources</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" required /> I agree to the Terms of Service.
+                </label>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            <div class="divider">or</div>
+
+            <button class="btn" onclick="location.href='@Url.Action("Login", "Account")'">Login</button>
+        </div>
+    </div>
+</body>
+</html>
+<!--//Title: Pro C 7 with.NET and .NET Core
+//Author: Andrew Troelsen; Philip Japikse
+// Date: 2017
+// Code version: Version 1
+//Availability: Textbook / Ebook-->

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CMS_WebApps", "CMS_WebApps.csproj", "{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS_WebApp_Tests", "..\CMS_WebApp_Tests\CMS_WebApp_Tests.csproj", "{11996E53-00C5-4F00-97E3-683DF86AACFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11996E53-00C5-4F00-97E3-683DF86AACFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11996E53-00C5-4F00-97E3-683DF86AACFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11996E53-00C5-4F00-97E3-683DF86AACFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11996E53-00C5-4F00-97E3-683DF86AACFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16D522A2-463E-4F5F-8C96-85557CFB2753}
+	EndGlobalSection
+EndGlobal

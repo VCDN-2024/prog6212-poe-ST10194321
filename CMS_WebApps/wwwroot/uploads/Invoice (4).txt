@@ -1,0 +1,19 @@
+Invoice Summary
+---------------------------
+Lecturer: Jose Gonzalves
+Claim ID: 1
+Modules: CLDV6212
+Total: R6 900,00
+---------------------------
+Lecturer: Jose Gonzalves
+Claim ID: 2
+Modules: CLDV6212
+Total: R4 500,00
+---------------------------
+Lecturer: Ale Tapia
+Email: tapia@gmail.com
+Contact: 0214564896
+Claim ID: 3
+Modules: PROG44
+Total: R7 500,00
+---------------------------

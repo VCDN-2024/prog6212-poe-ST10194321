@@ -1,0 +1,106 @@
+﻿@model CMS_WebApps.Models.ClaimViewModel
+
+@{
+    ViewData["Title"] = "Submit Claims";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=SF+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <!--> Design elements for the Submit claim page -->
+    <style>
+        /*https://www.w3schools.com/w3css/w3css_templates.asp */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'SF Pro', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            padding: 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-family: 'Bakbak One', sans-serif;
+            color: #043873;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #043873;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .btn-submit {
+            background-color: #086AD9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+        }
+
+            .btn-submit:hover {
+                background-color: #043873;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Claim</h1>
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div class="form-container">
+                <!-- Input field for the user's First Name -->
+                <div class="form-group">
+                    <label for="FirstName">First Name:</label>
+                    <input type="text" class="form-control" id="FirstName" name="FirstName" required />
+                </div>
+
+                <!-- Input field for the user's Last Name -->
+                <div class="form-group">
+                    <label for="LastName">Last Name:</label>
+                    <input type="text" class="form-control" id="LastName" name="LastName" required />
+                </div>
+
+                <!-- Input field for Hours worked -->
+                <div class="form-group">
+                    <label for="hours">Hours:</label>
+                    <input type="number" class="form-control" id="Hours" name="Hours" required />
+                </div>
+
+                <!-- Input field for the Module -->
+                <div class="form-group">
+                    <label for="module">Module:</label>
+                    <input type="text" class="form-control" id="module" name="Module" required />
+                </div>
+
+                <!-- Input field for the supporting document -->
+                <div class="form-group">
+                    <label for="document">Supporting Document (Optional):</label>
+                    <input type="file" class="form-control-file" id="document" name="Document" />
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Submit Claim</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<!--//Title: Pro C 7 with.NET and .NET Core
+//Author: Andrew Troelsen; Philip Japikse
+// Date: 2017
+// Code version: Version 1
+//Availability: Textbook / Ebook-->

@@ -1,0 +1,195 @@
+﻿@model List<CMS_WebApps.Models.ClaimViewModel>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <!--> Design elements for the Review Claims page -->
+    <style>
+        /*https://www.w3schools.com/w3css/w3css_templates.asp */
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #043873;
+            margin-bottom: 20px;
+            font-family: 'Bakbak One', sans-serif;
+        }
+
+        .container {
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        select, input[type="search"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        button#filter-btn {
+            background-color: #086AD9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            font-family: 'Bakbak One', sans-serif;
+            background-color: #043873;
+            color: white;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+
+        .status-pending {
+            color: #FFA500; /* Orange for pending */
+        }
+
+        .status-approved {
+            color: #28A745; /* Green for approved */
+        }
+
+        .status-rejected {
+            color: #DC3545; /* Red for rejected */
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+        }
+
+        .btn-download {
+            background-color: #086AD9;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Claims</h1>
+
+        <div class="filter-container">
+            <div>
+                <label for="status">Status</label>
+                <select id="status">
+                    <option value="All">All</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Approved">Approved</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+            <div>
+                <input type="search" id="search" placeholder="Search by ID, Name..." />
+                <button id="filter-btn">Filter</button>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Hours</th>
+                    <th>Modules</th>
+                    <th>Total</th>
+                    <th>Document</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var claim in Model)
+                {
+                    <tr>
+                        <td class="status @(claim.Status == "Pending" ? "status-pending" : claim.Status == "Approved" ? "status-approved" : "status-rejected")">
+                            @claim.Status
+                        </td>
+                        <td>@claim.Date1?.ToString("yyyy-MM-dd")</td>
+                        <td>@claim.ID</td>
+                        <td>@claim.LastName</td>
+                        <td>@claim.Hours</td>
+                        <td>@claim.Modules</td>
+                        <td>@claim.Total</td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(claim.Document))
+                            {
+                                <a href="@claim.Document" target="_blank" class="btn-download">📄@System.IO.Path.GetFileName(claim.Document)</a>
+                            }
+                            else
+                            {
+                                <span>No document uploaded</span>
+                            }
+                        </td>
+
+                        <td>
+                            <form asp-action="UpdateClaimStatus" method="post">
+                                <input type="hidden" name="id" value="@claim.ID" />
+                                @if (claim.Status == "Pending")
+                                {
+                                    <button type="submit" name="status" value="Approved" class="btn btn-success">Approve</button>
+                                    <button type="submit" name="status" value="Rejected" class="btn btn-danger">Reject</button>
+                                }
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<!--//Title: Pro C 7 with.NET and .NET Core
+//Author: Andrew Troelsen; Philip Japikse
+// Date: 2017
+// Code version: Version 1
+//Availability: Textbook / Ebook-->
