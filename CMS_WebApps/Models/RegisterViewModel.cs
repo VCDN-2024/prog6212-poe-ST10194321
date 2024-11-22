@@ -2,7 +2,6 @@
 
 namespace CMS_WebApps.Models
 {
-    //Model to store Login attributes
     public class RegisterViewModel
     {
         [Required]
@@ -15,8 +14,17 @@ namespace CMS_WebApps.Models
 
         [Required]
         public string Role { get; set; }
+
+        [Required(ErrorMessage = "Full Name is required.")]
+        public string FullName { get; set; }
+
+        [Required(ErrorMessage = "Phone Number is required.")]
+        [Phone(ErrorMessage = "Invalid phone number format.")]
+        public string PhoneNumber { get; set; }
     }
 }
+
+
 //Title: Pro C 7 with.NET and .NET Core
 //Author: Andrew Troelsen; Philip Japikse
 // Date: 2017
