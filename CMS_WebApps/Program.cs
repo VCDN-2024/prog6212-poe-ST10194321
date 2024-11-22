@@ -1,4 +1,6 @@
-
+using CMS_WebApps.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace CMS_WebApps
 {
@@ -8,11 +10,19 @@ namespace CMS_WebApps
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Configure services
+            builder.Services.AddDbContext<CMS_WebAppsContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            builder.Services.AddDefaultIdentity<IdentityUser>()
+                .AddRoles<IdentityRole>() // If you want to use roles
+                .AddEntityFrameworkStores<CMS_WebAppsContext>();
+
+            // Add controllers and Razor Pages
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
 
-
+            // Add session services
             builder.Services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -20,39 +30,31 @@ namespace CMS_WebApps
                 options.Cookie.IsEssential = true;
             });
 
+            // Register IHttpContextAccessor
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             var app = builder.Build();
 
-
-            if (!app.Environment.IsDevelopment())
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
-            }
-
+            // Middleware setup
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
-
-
-            app.UseSession();
-
-
-            app.UseAuthentication();
+            app.UseAuthentication(); // Add authentication middleware
             app.UseAuthorization();
-
+            app.UseSession();
 
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
-
-            app.MapRazorPages();
+            app.MapRazorPages(); // Map Razor Pages for Identity
 
             app.Run();
         }
     }
 }
+
 //Title: Pro C 7 with.NET and .NET Core
 //Author: Andrew Troelsen; Philip Japikse
 // Date: 2017

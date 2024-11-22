@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|solutionrelative:areas\\identity\\data\\cms_webappscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D20D9984-3932-41D4-BDE9-C9FC96D25DDA}|CMS_WebApps.csproj|c:\\users\\jose\\source\\repos\\cms_webapps\\views\\submission\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -86,8 +86,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 14,
@@ -98,16 +106,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T11:25:46.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "WhenOpened": "2024-11-22T11:25:46.995Z"
             },
             {
               "$type": "Document",
@@ -123,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CMS_WebAppsContext.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Data\\CMS_WebAppsContext.cs",
@@ -168,18 +167,17 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAFAAAAAAAAAAAAAIwHkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:40.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:40.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Jose\\source\\repos\\CMS_WebApps\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAABiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T16:40:41.047Z",
               "EditorCaption": ""
@@ -194,8 +192,7 @@
               "RelativeToolTip": "Views\\Submission\\Index.cshtml",
               "ViewState": "AQIAAJoAAAAAAAAAAAAIwMMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.534Z"
             },
             {
               "$type": "Document",
@@ -207,8 +204,7 @@
               "RelativeToolTip": "Controllers\\SubmissionController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.535Z"
             },
             {
               "$type": "Document",
@@ -220,8 +216,7 @@
               "RelativeToolTip": "Views\\Claims\\Create.cshtml",
               "ViewState": "AQIAAD4AAAAAAAAAAADwv2oAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.536Z"
             },
             {
               "$type": "Document",
@@ -233,8 +228,7 @@
               "RelativeToolTip": "Views\\Claims\\Index.cshtml",
               "ViewState": "AQIAAJ4AAAAAAAAAAADwv74AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.537Z"
             },
             {
               "$type": "Document",
@@ -246,8 +240,7 @@
               "RelativeToolTip": "Controllers\\ClaimsController.cs",
               "ViewState": "AQIAAC8AAAAAAAAAAAAgwFYAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.538Z"
             },
             {
               "$type": "Document",
@@ -259,8 +252,7 @@
               "RelativeToolTip": "Models\\ClaimsViewModel.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAgwCgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.539Z"
             },
             {
               "$type": "Document",
@@ -272,8 +264,7 @@
               "RelativeToolTip": "Views\\Account\\RegisterView.cshtml",
               "ViewState": "AQIAAFwAAAAAAAAAAADwv3kAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.54Z"
             },
             {
               "$type": "Document",
@@ -285,8 +276,7 @@
               "RelativeToolTip": "Views\\Account\\LoginView.cshtml",
               "ViewState": "AQIAAE8AAAAAAAAAAADwv2wAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.542Z"
             },
             {
               "$type": "Document",
@@ -298,8 +288,7 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AQIAADsAAAAAAAAAAAAIwF0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.543Z"
             },
             {
               "$type": "Document",
@@ -311,8 +300,7 @@
               "RelativeToolTip": "Models\\RegisterViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.544Z"
             },
             {
               "$type": "Document",
@@ -324,8 +312,7 @@
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:40:41.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.545Z"
             },
             {
               "$type": "Document",
@@ -337,8 +324,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AQIAACoAAAAAAAAAAAAAAEoAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:40:41.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T16:40:41.546Z"
             }
           ]
         }
