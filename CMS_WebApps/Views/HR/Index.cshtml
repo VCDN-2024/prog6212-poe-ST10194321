@@ -1,0 +1,162 @@
+﻿@{
+    var approvedClaims = ViewBag.ApprovedClaims as List<CMS_WebApps.Models.ClaimViewModel>;
+    var lecturers = ViewBag.Lecturers as List<CMS_WebApps.Models.LecturerViewModel>;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SF Pro', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        h1, h2 {
+            color: #043873;
+            font-family: 'Bakbak One', sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        th {
+            font-family: 'Bakbak One', sans-serif;
+            background-color: #043873;
+            color: white;
+        }
+
+        input[type="text"], input[type="email"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #086AD9;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #043873;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HR Dashboard</h1>
+
+        <!-- Approved Claims Section -->
+        <h2>Approved Claims</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Modules</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (approvedClaims != null && approvedClaims.Any())
+                {
+                    @foreach (var claim in approvedClaims)
+                    {
+                        <tr>
+                            <td>@claim.ID</td>
+                            <td>@claim.FirstName @claim.LastName</td>
+                            <td>@claim.Modules</td>
+                            <td>@claim.Total.ToString("C")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" style="text-align: center;">No approved claims available.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Lecturer Management Section -->
+        <!-- Lecturer Management Section -->
+        <h2>Lecturer Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (lecturers != null && lecturers.Any())
+                {
+                    @foreach (var lecturer in lecturers)
+                    {
+                        <tr>
+                            <form method="post" asp-action="UpdateLecturer" asp-controller="HR">
+                            <td><input type="text" name="FullName" value="@lecturer.FullName" /></td>
+                            <td><input type="email" name="Email" value="@lecturer.Email" /></td>
+                            <td><input type="text" name="PhoneNumber" value="@lecturer.PhoneNumber" /></td>
+                            <td>
+                                <button type="submit">Update</button>
+                                <input type="hidden" name="LecturerID" value="@lecturer.LecturerID" />
+                            </td>
+                            </form>
+                            <td>
+                            <td>
+                                <!-- Generate Invoice Button -->
+                                <form method="post" asp-action="GenerateInvoice" asp-controller="HR">
+                                    <input type="hidden" name="lecturerID" value="@lecturer.LecturerID" />
+                                    <button type="submit">Generate Invoice</button>
+                                </form>
+                            </td>
+
+                            </td>
+
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" style="text-align: center;">No lecturers available.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
