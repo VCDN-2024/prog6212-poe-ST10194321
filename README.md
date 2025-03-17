@@ -4,31 +4,31 @@ The Contract Monthly Claim System (CMCS) is an ASP.NET Core MVC application desi
 
 ---
 ### Homepage
-![Homepage](images/Screenshot%202024-11-21%20193523.png)
+![Homepage](imagesREAD/Screenshot%202024-11-21%20193523.png)
 
 ## Features
 
 ### Lecturer Features
 - **Submit Claims:** Lecturers can submit claims with details like hours worked, modules, and supporting documents.
 - ### Submit Claim
-![Submit Claim](images/Screenshot%202024-11-21%20194310.png)
+![Submit Claim](imagesREAD/Screenshot%202024-11-21%20194310.png)
 - **Claim Status Tracking:** View submitted claims and track their status (Pending, Approved, Rejected).
 ### Claims Overview
-![Claims Overview](images/Screenshot%202024-11-21%20201022.png)
+![Claims Overview](imagesREAD/Screenshot%202024-11-21%20201022.png)
 
 ### HR Features
 - **Lecturer Management:** Update lecturer details such as name, email, and contact information.
 - ### HR Dashboard
-![HR Dashboard](images/Screenshot%202025-03-17%20160910.png)
+![HR Dashboard](imagesREAD/Screenshot%202025-03-17%20160910.png)
 - **Invoice Generation:** Automatically generate detailed invoices for approved claims, including totals across multiple claims.
 - ### Invoice Summary
-![Invoice Summary](images/Screenshot%202024-11-22%20114545.png)
+![Invoice Summary](imagesREAD/Screenshot%202024-11-22%20114545.png)
 
 ### Program Coordinator & Academic Manager Features
 - **Claim Review:** Approve or reject claims submitted by lecturers.
 - **Dashboard Overview:** View all claims and their statuses
 ### Review Claims
-![Review Claims](images/Screenshot%202024-11-21%20201123.png)
+![Review Claims](imagesREAD/Screenshot%202024-11-21%20201123.png)
 
 ### Key Functionalities
 - **Secure Authentication:** Role-based access using Azure Identity ensures only authorized users can access relevant pages.
